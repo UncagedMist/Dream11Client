@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Dream11Client</string>
+    
+    
+    <string-array name="game_category">
+        <item>CRICKET</item>
+        <item>FOOTBALL</item>
+        <item>KABADDI</item>
+    </string-array>
+    
 </resources>

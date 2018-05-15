@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tbc.techbytecare.kk.dream11client">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,8 +20,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity
+            android:name=".LogInActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".FixtureDetailActivity" />
+        <activity android:name=".NotifyActivity"
+            android:parentActivityName=".HomeActivity"></activity>
     </application>
 
 </manifest>
