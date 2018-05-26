@@ -11,25 +11,21 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
+
     @Override
     public Fragment getItem(int position) {
 
         switch(position) {
             case 0:
-                FixtureFragment fixtureFragment = new FixtureFragment();
-                return fixtureFragment;
+                return FixtureFragment.newInstance();
 
             case 1:
-                LiveFragment liveFragment = new LiveFragment();
-                return  liveFragment;
+                return  LiveFragment.newInstance();
 
             case 2:
-                ResultFragment resultFragment = new ResultFragment();
-                return resultFragment;
-
-            default:
-                return  null;
+                return ResultFragment.newInstance();
         }
+        return null;
     }
 
     @Override
@@ -37,7 +33,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         return 3;
     }
 
-    @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
 
@@ -50,9 +45,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
             case 2:
                 return "RESULTS";
-
-            default:
-                return null;
         }
+        return null;
     }
 }

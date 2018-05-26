@@ -129,7 +129,7 @@ public class LogInActivity extends AppCompatActivity {
                     users.child(currentUserID).child("deviceToken").setValue(deviceToken).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
-                            Toast.makeText(LogInActivity.this, "Welcome...", Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(LogInActivity.this, "Welcome...", Toast.LENGTH_SHORT).show();
                             Intent mainIntent = new Intent(LogInActivity.this, HomeActivity.class);
                             mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(mainIntent);

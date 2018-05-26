@@ -10,24 +10,20 @@ import android.view.ViewGroup;
 
 import tbc.techbytecare.kk.dream11client.R;
 
-public class LiveFragment extends Fragment {
+public class ProfileFragment extends Fragment {
 
-    public LiveFragment() {
+    public ProfileFragment() {
     }
 
-    public static LiveFragment newInstance()    {
-        LiveFragment liveFragment = new LiveFragment();
+    public static ProfileFragment newInstance()    {
+        ProfileFragment profileFragment = new ProfileFragment();
 
-        return liveFragment;
+        return profileFragment;
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
+    @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_live,container,false);
+        return inflater.inflate(R.layout.fragment_profile,container,false);
     }
 }

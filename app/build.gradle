@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "tbc.techbytecare.kk.dream11client"
-        minSdkVersion 23
+        minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -38,6 +38,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:15.0.2'
     implementation 'com.google.firebase:firebase-messaging:15.0.2'
     implementation 'com.google.firebase:firebase-auth:15.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:3.3.1'
 
     implementation 'com.github.bloder:magic:1.1'
     implementation 'com.daimajia.slider:library:1.1.5@aar'

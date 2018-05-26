@@ -15,7 +15,17 @@ public class ResultFragment extends Fragment {
     public ResultFragment() {
     }
 
-    @Nullable
+    public static ResultFragment newInstance()    {
+        ResultFragment resultFragment = new ResultFragment();
+
+        return resultFragment;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
