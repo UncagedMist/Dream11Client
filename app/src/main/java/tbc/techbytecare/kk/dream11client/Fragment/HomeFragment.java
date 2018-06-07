@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -20,7 +19,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.daimajia.slider.library.Animations.DescriptionAnimation;
 import com.daimajia.slider.library.SliderLayout;
@@ -34,9 +32,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
 
-import tbc.techbytecare.kk.dream11client.Common.Common;
 import tbc.techbytecare.kk.dream11client.FixtureDetailActivity;
-import tbc.techbytecare.kk.dream11client.HomeActivity;
 import tbc.techbytecare.kk.dream11client.Model.Banner;
 import tbc.techbytecare.kk.dream11client.NotifyActivity;
 import tbc.techbytecare.kk.dream11client.R;

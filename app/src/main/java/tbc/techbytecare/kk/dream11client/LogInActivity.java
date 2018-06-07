@@ -18,17 +18,11 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.iid.FirebaseInstanceId;
 
 import br.com.bloder.magic.view.MagicButton;
-import tbc.techbytecare.kk.dream11client.Common.Common;
-import tbc.techbytecare.kk.dream11client.Model.User;
 
 public class LogInActivity extends AppCompatActivity {
 
@@ -130,7 +124,7 @@ public class LogInActivity extends AppCompatActivity {
                         @Override
                         public void onSuccess(Void aVoid) {
 //                            Toast.makeText(LogInActivity.this, "Welcome...", Toast.LENGTH_SHORT).show();
-                            Intent mainIntent = new Intent(LogInActivity.this, HomeActivity.class);
+                            Intent mainIntent = new Intent(LogInActivity.this, StartActivity.class);
                             mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(mainIntent);
                             finish();

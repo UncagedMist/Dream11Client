@@ -26,10 +26,15 @@
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".StartActivity" />
         <activity android:name=".FixtureDetailActivity" />
-        <activity android:name=".NotifyActivity"
-            android:parentActivityName=".HomeActivity"></activity>
+        <activity
+            android:name=".NotifyActivity"
+            android:parentActivityName=".StartActivity" />
+        <activity android:name=".Activity.MyContentsActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.MoreActivity" />
+        <activity android:name=".Activity.HomeActivity"></activity>
     </application>
 
 </manifest>
